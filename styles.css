@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+  --primary-color:#4f46e5;
+  --secondary-color:#18181b;
+}
+.body
+{
+  text-align: center;
+  color:var(--secondary-color);
+}
+/** heading**/
+h1{
+  padding-top: 3rem;
+  padding-left:9rem;
+  color: var(--primary-color );
+}
+/*** container***/
+.container{
+  margin:auto;
+  width:50vw;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+.table caption
+{
+  font-size: 1.4rem;
+  padding: 0.25rem;;
+}
+.text
+{
+  font-size: 1.4rem;
+}
+table{
+  border-collapse: collapse;
+  text-align: justify;
+  margin: auto;
+}
+th,td{
+  width: 0%;;
+  border:0.2px solid black;
+  padding: 0.4rem;
+  color:var(--secondary-color)
+}
+input{
+  width: 50%;
+  height: 2.5rem;
+  display: block;
+  margin: auto;
+  font-size: 1.1rem;
+}
+label
+{
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+}
+#check-button
+{
+  background-color: var(--primary-color);
+  padding:0.5rem 1rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.5rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.button-container
+{
+  text-align: center;
+}
+#message
+{
+  color:red;
+}
