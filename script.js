@@ -7,23 +7,27 @@ const notes=document.querySelectorAll(".notes-count")
 var clickhandler=()=>{
   const billamnt=parseInt(billamount.value);
   const cashamnt=parseInt(cashgiven.value);
-  console.log("bill amount",billamnt)
-  console.log("cashamount",cashamnt)
-  console.log("Is"+cashamnt +" < "+""+billamnt,(cashamnt < billamnt))
-  message.style.display="none";
-  if(billamnt<=0)
+  if(billamount.value===''||cashgiven.value==='')
   {
-     showmessage("Enter a valid Bill Amount!!")
+    showmessage("Enter all the fields Please!!");
   }
   else
   {
-    if(cashamnt < billamnt)
+    message.style.display="none";
+    if(billamnt<=0)
     {
-      showmessage("Do you want to wash Dishes !!! ?")
+      showmessage("Enter a valid Bill Amount!!")
     }
-    else{
-      message.style.display="none";
-      setAmount(cashamnt-billamnt)
+    else
+    {
+      if(cashamnt < billamnt)
+      {
+        showmessage("Do you want to wash Dishes !!! ?")
+      }
+      else{
+        message.style.display="none";
+        setAmount(cashamnt-billamnt)
+      }
     }
   }
 }
